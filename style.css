@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  display: grid;
+  height: 100%;
+  text-align: center;
+  place-items: center;
+}
+
+.window {
+  background: #f2f2f2;
+  border-radius: 10px;
+  border: 1px solid #9d9d9d;
+}
+
+.title {
+  background: #4a4849;
+  color: #fff;
+  text-align: left;
+  padding: 8px;
+  padding-left: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.range {
+  width: 330px;
+  background: #fff;
+  border-radius: 5px;
+  margin: 15px;
+  border: 1px solid #e1e1e1;
+}
+
+.range .sliderValue {
+  position: relative;
+  width: 110px;
+  left: 110px;
+  margin-left: 1px;
+}
+
+.range .sliderValue span {
+  position: absolute;
+  height: 20px;
+  width: 25px;
+  left: 90px;
+  bottom: -10px;
+  font-size: 14px;
+}
+
+.range .sliderValue span:after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 1px;
+  bottom: 20px;
+  left: 10px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #565854;
+  
+}
+
+.range .main {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.range .field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.range .field input {
+  -webkit-appearance: none;
+  height: 14px;
+  width: 100px;
+  border: 3px solid #cdd1cc;
+  background-color: #cfcfcf;
+  outline: none;
+  overflow: hidden;
+}
+
+.range .field input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 0px;
+  cursor: pointer;
+  box-shadow: -100px 0 0 100px #008acf;
+}
+
+.range .value-bottom {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 13px;
+  color: #616266;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.range .value-bottom p {
+  padding-left: 5px;
+}
+
+.value-left {
+  padding-right: 15px;
+  font-weight: 550;
+}
+
+.value-right {
+  background-color: #898584;
+  color: #fff;
+  width: 60px;
+  border-radius: 5px;
+  border: 0.5px solid #e1e1e1;
+}
+
+#first-col {
+  font-size: 14px;
+  padding: 2px;
+}
+
+#second-col {
+  font-size: 20px;
+  padding: 2px;
+}
+
+.value-right hr {
+  border: none;
+  color: #828284;
+  background-color: #9a9697;
+  height: 1px;
+}
